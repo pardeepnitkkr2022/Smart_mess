@@ -9,7 +9,7 @@ const AttendanceTable = () => {
     useEffect(() => {
         const fetchAttendance = async () => {
             try {
-                const res = await axios.get("http://localhost:3000/api/attendance/my-attendance", {
+                const res = await axios.get("https://smart-mess-backend-one.vercel.app/api/attendance/my-attendance", {
                     withCredentials: true, // Important: this sends the cookie
                 });
 
